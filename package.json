@@ -1,0 +1,36 @@
+{
+  "name": "virtual-keyboard",
+  "version": "1.0.0",
+  "description": "- Run \"npm install\" to install all dependencies\r - Use \"npm run build\" to build script.js\r - Open index.html \r - ENJOY :)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint ./src ",
+    "lint:fix": "eslint ./src --fix",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/olgakostrub/virtual-keyboard.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/olgakostrub/virtual-keyboard/issues"
+  },
+  "homepage": "https://github.com/olgakostrub/virtual-keyboard#readme",
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb": "^18.1.0",
+    "eslint-config-prettier": "^6.10.1",
+    "eslint-plugin-html": "^6.0.1",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-prettier": "^3.1.2",
+    "prettier": "^2.0.3",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  }
+}
