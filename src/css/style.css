@@ -1,0 +1,77 @@
+.main {
+  max-width: 1000px;
+  min-width: 670px;
+  margin: 0 auto;
+  padding: 20px 25px 0 25px;
+}
+
+.user-input {
+  width: 100%;
+}
+
+textarea {
+  width: 100%;
+}
+
+.keyboard {
+  margin: 0 auto;
+  width: 670px;
+  padding: 5px;
+  display: grid;
+  grid-template-columns: repeat(15, 40px);
+  grid-template-rows: repeat(5, 40px);
+  grid-row-gap: 5px;
+  grid-column-gap: 5px;
+  font-weight: bold;
+  user-select: none;
+}
+
+.key {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  background-color: #3a424e;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.key.functional {
+  background-color: #1c232e;
+  color: #aaaaaa;
+  font-size: 18px;
+}
+
+.key.pressed {
+  background-color: #5571ee;
+}
+
+.capslock-active .CapsLock:not(.pressed) {
+  background-color: darkorchid;
+}
+
+.capslock-active .key:not(.functional) .base {
+  text-transform: uppercase;
+}
+
+.key .extra {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  font-size: 12px;
+}
+
+.info {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 25px;
+}
+
+.language {
+  font-weight: bold;
+  text-transform: uppercase;
+}
