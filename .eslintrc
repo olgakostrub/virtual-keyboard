@@ -2,6 +2,17 @@
   "extends": ["airbnb/base", "prettier"],
   "plugins": ["prettier"],
   "rules": {
-    "prettier/prettier": ["error"]
+    "prettier/prettier": [
+      "error",
+      {
+        "endOfLine": "auto"
+      }
+    ],
+    "import/prefer-default-export": "off", // webpack did not work correctly with default exports
+    "import/no-cycle": "off", // need to implement interactions between modules
+    "no-param-reassign": "off" // need to store additional information associated with textarea
+  },
+  "env": {
+    "browser": true
   }
 }
